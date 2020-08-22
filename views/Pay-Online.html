@@ -6,6 +6,8 @@
       functions for interacting with webpages and APIs
     -->
 
+    
+
     <!--needs changes -->
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 
@@ -15,17 +17,58 @@
   </head>
 
   <body>
-    <!-- TODO: Say something interesting in the heading tag... -->
-    <h1>...</h1>
+    <!-- header -->
+    <h1>
+      
+        <span> Snapper Hub </span>
+      
+      <button type="buttonTimetable">View Timetable</button>
+      <button type="buttonLogOut">Log Out</button>
+    </h1>
 
-    <div class="purple">
+    <h2>
+      Top Up 
+    </h2>
+
+  <h3>  
+    Choose payment option below
+  </h3>
+
+  <!--
+   <div class="purple">
       <span>Hey Snapper App Team!! </span>
     </div>
+  -->
 
-    <button>Show me some animal trivia!</button>
 
+    Snapper ID : 1234 5678 9012 3456  CVV:789
+    Current Balance: $ 10.00
+
+    <form action="/action_page.php">
+      <label for="fname">First name:</label>
+      <input type="text" id="fname" name="fname"><br><br>
+
+      <label for="lname">Last name:</label>
+      <input type="text" id="lname" name="lname"><br><br>
+
+      <input type="submit" value="Submit">
+    </form>
+
+    <footer>
+       <!-- 
+       <p>Author: Hege Refsnes</p>
+       <p><a href="mailto:hege@example.com">hege@example.com</a></p>--> 
+
+      <button type="buttonTop-Up">Top-Up</button>
+      <button type="buttonCancel">Cancel</button>
+
+    </footer>
+    
     <div id="results-area"></div>
     <div id="question-display"></div>
     <div id="answer-display"></div>
   </body>
+  
+
+
 </html>
