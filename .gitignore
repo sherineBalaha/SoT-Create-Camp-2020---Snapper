@@ -1,0 +1,11 @@
+# GITIGNORE
+
+### Jet Brains IDE
+.idea
+
+### NODE.JS Projects
+node_modules
+build
+npm-debug.log
+.env
+.DS_Store

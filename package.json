@@ -1,0 +1,22 @@
+{
+  "name": "snapper-hub",
+  "version": "1.0.0",
+  "description": "Web app for Snapper services",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BrisingrNZ/SoT-Create-Camp-2020---Snapper.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BrisingrNZ/SoT-Create-Camp-2020---Snapper/issues"
+  },
+  "homepage": "https://github.com/BrisingrNZ/SoT-Create-Camp-2020---Snapper#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
