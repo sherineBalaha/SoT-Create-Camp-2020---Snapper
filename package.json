@@ -17,7 +17,8 @@
   },
   "homepage": "https://github.com/BrisingrNZ/SoT-Create-Camp-2020---Snapper#readme",
   "dependencies": {
+    "ejs": "^3.1.5",
     "express": "^4.17.1",
-    "leaflet": "^1.6.0"
+    "ol": "^6.4.3"
   }
 }
