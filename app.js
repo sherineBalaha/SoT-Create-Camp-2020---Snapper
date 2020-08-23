@@ -45,7 +45,7 @@ function validateLogIn(params, res) {
     let password = params.password;
 
     if (username === 'test.snapper.hub@testmail.com' && password === 'CreateCamp2020'){
-        res.render('home.html');
+        res.render('nearest-kiosks.html');
     }
     else res.render('log-in.html');
 }
