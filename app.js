@@ -1,12 +1,8 @@
-
-
-
-
-
 var express = require('express');
 var app = express();
 var bodyParser = require('body-parser');
 
+app.use(express.static("css"));
 app.engine('html', require('ejs').renderFile);
 
 app.get('/', function(req, res){
