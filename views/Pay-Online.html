@@ -10,39 +10,39 @@
 
     <!-- Load our files -->
     <script type="text/javascript" src="Pay-Online.js"></script>
-    <link   rel="stylesheet" type="text/css" href="Pay-Online.css">
+    <link   rel="stylesheet" href="Pay-Online.css">
   </head>
 
   <body>
-    <!-- header -->
-    <h1>
-      
-        <span> Snapper Hub </span>
-      
-      <button type="buttonTimetable">View Timetable</button>
-      <button type="buttonLogOut">Log Out</button>
-    </h1>
+    <nav>
+      <div class="navigation" role="navigation">
+          <div class="nav-bar">
+              <ul>
+                  <a class="page-scroll"><span class="header-logo">Snapper Hub</span></a>
+                  <li><a class="page-scroll" href="#">View Timetable</a></li>
+                  <li><a class="page-scroll" href="#">Log Out</a></li>
+              </ul>
+          </div>
+      </div>    
+  </nav>
 
-    <h2>
-      Top up 
-    </h2>
-
-    <h3>  
-      Choose payment option 
-    </h3>
-  <p> 
-   <!--radio button here-->
-
-  </p>
-  <!--
-   <div class="purple">
-      <span>Hey Snapper App Team!! </span>
-    </div>
-  -->
-
-   <p>  Snapper ID : 1234 5678 9012 3456     CVV:789   </p>
-   <p>  Current Balance: $ 10.00   </p>
-   
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <div class="container">
+    <h2>Top up</h2>
+    <p1>  Snapper ID : 1234 5678 9012 3456     CVV:789   </p1>
+    <br>
+    <p1>  Current Balance: $ 10.00   </p1>
+    <p> Choose payment option</p>
+    <input type="radio" id="Credit" name="type" value="Credit">
+    <label for="Credit">Credit Card</label>
+    <input type="radio" id="Debit" name="type" value="Debit">
+    <label for="Debit">Debit Card</label><br>
 
     <form>
       <p> <input type ="text" name="amount"  placeholder="Amount">
@@ -56,20 +56,16 @@
             <option value="100">$100</option>
 
           </select>
-          <br><br>
-          
-        </form>
-        
       </p>
       <p><input type ="text" name="cardName"  placeholder="Card Name" > </p>
 
       <p> <input type ="text" name="cardNumber"  placeholder="Card Number" height="60" width="600">
 
-      <img src="D:\Create Camp 2020\Snapper\images\visa.jfif" alt="loading.." style="width:30px;height:30px;">
+      <!--<img src="D:\Create Camp 2020\Snapper\images\visa.jfif" alt="loading.." style="width:30px;height:30px;">
       <img src="D:\Create Camp 2020\Snapper\images\americanExpress.jfif" alt="loading.." style="width:30px;height:30px;">
       <img src="D:\Create Camp 2020\Snapper\images\visa.jfif" alt="loading.." style="width:30px;height:30px;">
       <img src="D:\Create Camp 2020\Snapper\images\visa.jfif" alt="loading.." style="width:30px;height:30px;">
-
+      -->
 
 
 
@@ -84,6 +80,12 @@
 
     </form>
 
+    <button type="buttonCancel" id="cancel" >Cancel</button>
+    <button type="buttonTop-Up" id="top-up">Top-Up</button>
+
+  </div>
+
+
     <footer>
        <!-- 
          <form action="/action_page.php"></form>
@@ -92,8 +94,7 @@
       <input type="image">
       --> 
 
-      <button type="buttonTop-Up">Top-Up</button>
-      <button type="buttonCancel">Cancel</button>
+
 
     </footer>
     
