@@ -31,9 +31,12 @@ app.post('/validateLogIn', function (req, res){
     validateLogIn(req.body, res);
 });
 
-app.listen(3000, function () {
-    console.log('Snapper Hub listening on port 3000!');
+const PORT = process.env.PORT || 5000
+
+app.listen(PORT, function () {
+    console.log(`Snapper Hub listening on port ${PORT}`);
 });
+
 
 
 
