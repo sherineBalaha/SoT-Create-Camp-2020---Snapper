@@ -8,8 +8,17 @@ app.engine('html', require('ejs').renderFile);
 app.get('/', function (req, res) {
     res.render('log-in.html');
 });
+app.get('/log-in', function (req, res) {
+    res.render('log-in.html');
+});
 app.get('/home', function (req, res) {
     res.render('home.html');
+});
+app.get('/pay-online', function (req, res) {
+    res.render('Pay-Online.html');
+});
+app.get('/map', function (req, res) {
+    res.render('nearest-kiosks.html');
 });
 
 app.use(bodyParser.urlencoded({
