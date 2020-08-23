@@ -38,23 +38,24 @@
   <br>
   <br>
   <br>
-  <br>
   <div class="container">
     <h2>Top up</h2>
     <p1>  Snapper ID : 1234 5678 9012 3456     CVV:789   </p1>
     <br>
     <p1>  Current Balance: $ 10.00   </p1>
-    <p> Choose payment option</p>
+    <br>
+    <br>
+    <p1> Choose payment option:</p1>
     <input type="radio" id="Credit" name="type" value="Credit">
-    <label for="Credit">Credit Card</label>
+    <label for="Credit">Credit</label>
     <input type="radio" id="Debit" name="type" value="Debit">
-    <label for="Debit">Debit Card</label><br>
->>>>>>>
+    <label for="Debit">Debit</label><br>
 
     <form>
-      <p> <input type ="text" name="amount"  placeholder="Amount">
-        
-          <select name="amount" id="Amount"  placeholder="Amount">
+
+      <br>
+      <p1>Choose Amount:</p1>
+          <select name="amount" id="Amount"  placeholder="Amount" id="filter">
             
             <option value="10">$10</option>
             <option value="25">$25</option>
@@ -63,45 +64,24 @@
             <option value="100">$100</option>
 
           </select>
-      </p>
-      <p><input type ="text" name="cardName"  placeholder="Card Name" > </p>
+          <br>
 
-      <p> <input type ="text" name="cardNumber"  placeholder="Card Number" height="60" width="600">
-
-      <!--<img src="D:\Create Camp 2020\Snapper\images\visa.jfif" alt="loading.." style="width:30px;height:30px;">
-      <img src="D:\Create Camp 2020\Snapper\images\americanExpress.jfif" alt="loading.." style="width:30px;height:30px;">
-      <img src="D:\Create Camp 2020\Snapper\images\visa.jfif" alt="loading.." style="width:30px;height:30px;">
-      <img src="D:\Create Camp 2020\Snapper\images\visa.jfif" alt="loading.." style="width:30px;height:30px;">
-      -->
-
-<<<<<<<
-<form action="/action_page.php">
-    <label for="fname">First name:</label>
-    <input type="text" id="fname" name="fname"><br><br>
-=======
-
->>>>>>>
-
-<<<<<<<
-    <label for="lname">Last name:</label>
-    <input type="text" id="lname" name="lname"><br><br>
-=======
-
->>>>>>>
-
-      </p>
-
-      <p> <input type ="text" name="month"  placeholder="Month/Year"></p>
-      <p> <input type ="text" name="cvv"    placeholder="CVV"></p>
+      <input type ="text" name="cardName"  placeholder="Card Name" class="form-entry1" required> 
+      <br>
+      <input type ="text" name="cardNumber"  placeholder="Card Number" class="form-entry1" required>
+      <input type ="text" name="month"  placeholder="Month/Year" class="form-entry" required>
+      <input type ="text" name="cvv"    placeholder="CVV" class="form-entry" required>
       
       
-      <p><input type="checkbox">
-      <label for="Save">Save Details</label></p>
+      <p1><input type="checkbox" id="save">
+      <label for="Save" id="save">Save Details</label></p1>
+      <br>
+      <br>
 
     </form>
 
     <button type="buttonCancel" id="cancel" >Cancel</button>
-    <button type="buttonTop-Up" id="top-up">Top-Up</button>
+    <button type="submit" value="submit" id="top-up">Top-Up</button>
 
   </div>
 
