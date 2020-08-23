@@ -7,22 +7,52 @@
     </head>
 
     <body>
-        <h1>Map Testing</h1>
-
-        <div id="kioskMap"></div>
-        <script type="text/javascript">
-            var map = new ol.Map({
-                target: 'kioskMap',
-                layers: [
-                    new ol.layer.Tile({
-                        source: new ol.source.OSM()
-                    })
-                ],
-                view: new ol.View({
-                    center: ol.proj.fromLonLat([174.775, -41.292]),
-                    zoom: 14
-                })
-            });
-        </script>
+        <nav>
+            <div class="navigation" role="navigation">
+                <div class="nav-bar">
+                    <ul>
+                        <a class="page-scroll"><span class="header-logo">Snapper Hub</span></a>
+                        <li><a class="page-scroll" href="#">Timetable</a></li>
+                        <li><a class="page-scroll" href="#">Top Up</a></li>
+                        <li><a class="page-scroll" href="#">Log Out</a></li>
+                    </ul>
+                </div>
+            </div>    
+        </nav>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <div class="row">
+            <div class="column" style="background-color:  rgb(255, 214, 214);">
+                <h2>Nearest Kiosks</h2>
+                <input type="text" placeholder="Enter Location..">
+                <select name="filter" id="filter">
+                    <option value="filter">1-5km</option>
+                    <option value="filter">5-10km</option>
+                    <option value="filter">10-15km</option>
+                    <option value="filter">15-20km</option>
+                  </select>
+            </div>
+            <div class="column" style="background-color:white">
+                <div id="kioskMap"></div>
+                <script type="text/javascript">
+                    var map = new ol.Map({
+                        target: 'kioskMap',
+                        layers: [
+                            new ol.layer.Tile({
+                                source: new ol.source.OSM()
+                            })
+                        ],
+                        view: new ol.View({
+                            center: ol.proj.fromLonLat([174.775, -41.292]),
+                            zoom: 14
+                        })
+                    });
+                </script>
+            </div>
+        </div>
     </body>
 </html>
