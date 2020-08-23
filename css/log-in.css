@@ -24,6 +24,7 @@ nav ul {
     padding: 1%;
     margin-left: 0;
     color: #000;
+    /*display:inline-block;*/
 }
 
 nav ul li {
