@@ -1,12 +1,11 @@
 <html>
-  <head>
+<head>
     <!--
       Get jQuery via CDN (https://jquery.com/)
       jQuery is a js framework that gives us some easy to use
       functions for interacting with webpages and APIs
     -->
 
-    
 
     <!--needs changes -->
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
@@ -14,61 +13,64 @@
     <!-- Load our files -->
     <script type="text/javascript" src="Pay-Online.js"></script>
     <link rel="stylesheet" type="text/css" href="Pay-Online.css">
-  </head>
+</head>
 
-  <body>
-    <!-- header -->
-    <h1>
-      
-        <span> Snapper Hub </span>
-      
-      <button type="buttonTimetable">View Timetable</button>
-      <button type="buttonLogOut">Log Out</button>
-    </h1>
+<body>
+    <nav>
+        <div class="navigation" role="navigation">
+            <div class="nav-bar">
+                <ul>
+                    <a class="page-scroll"><span class="header-logo">Snapper Hub</span></a>
+                    <li><a class="page-scroll" href="#">View Timetable</a></li>
+                    <li><a class="page-scroll" href="/map">Kiosk Map</a></li>
+                    <li><a class="page-scroll" href="/log-in">Log Out</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
-    <h2>
-      Top Up 
-    </h2>
+<h2>
+    Top Up
+</h2>
 
-  <h3>  
+<h3>
     Choose payment option below
-  </h3>
+</h3>
 
-  <!--
-   <div class="purple">
-      <span>Hey Snapper App Team!! </span>
-    </div>
-  -->
+<!--
+ <div class="purple">
+    <span>Hey Snapper App Team!! </span>
+  </div>
+-->
 
 
-    Snapper ID : 1234 5678 9012 3456  CVV:789
-    Current Balance: $ 10.00
+Snapper ID : 1234 5678 9012 3456 CVV:789
+Current Balance: $ 10.00
 
-    <form action="/action_page.php">
-      <label for="fname">First name:</label>
-      <input type="text" id="fname" name="fname"><br><br>
+<form action="/action_page.php">
+    <label for="fname">First name:</label>
+    <input type="text" id="fname" name="fname"><br><br>
 
-      <label for="lname">Last name:</label>
-      <input type="text" id="lname" name="lname"><br><br>
+    <label for="lname">Last name:</label>
+    <input type="text" id="lname" name="lname"><br><br>
 
-      <input type="submit" value="Submit">
-    </form>
+    <input type="submit" value="Submit">
+</form>
 
-    <footer>
-       <!-- 
-       <p>Author: Hege Refsnes</p>
-       <p><a href="mailto:hege@example.com">hege@example.com</a></p>--> 
+<footer>
+    <!--
+    <p>Author: Hege Refsnes</p>
+    <p><a href="mailto:hege@example.com">hege@example.com</a></p>-->
 
-      <button type="buttonTop-Up">Top-Up</button>
-      <button type="buttonCancel">Cancel</button>
+    <button type="buttonTop-Up">Top-Up</button>
+    <button type="buttonCancel">Cancel</button>
 
-    </footer>
-    
-    <div id="results-area"></div>
-    <div id="question-display"></div>
-    <div id="answer-display"></div>
-  </body>
-  
+</footer>
+
+<div id="results-area"></div>
+<div id="question-display"></div>
+<div id="answer-display"></div>
+</body>
 
 
 </html>
