@@ -8,12 +8,9 @@
 
     
 
-    <!--needs changes -->
-    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-
     <!-- Load our files -->
     <script type="text/javascript" src="Pay-Online.js"></script>
-    <link rel="stylesheet" type="text/css" href="Pay-Online.css">
+    <link   rel="stylesheet" type="text/css" href="Pay-Online.css">
   </head>
 
   <body>
@@ -27,37 +24,73 @@
     </h1>
 
     <h2>
-      Top Up 
+      Top up 
     </h2>
 
-  <h3>  
-    Choose payment option below
-  </h3>
+    <h3>  
+      Choose payment option 
+    </h3>
+  <p> 
+   <!--radio button here-->
 
+  </p>
   <!--
    <div class="purple">
       <span>Hey Snapper App Team!! </span>
     </div>
   -->
 
+   <p>  Snapper ID : 1234 5678 9012 3456     CVV:789   </p>
+   <p>  Current Balance: $ 10.00   </p>
+   
 
-    Snapper ID : 1234 5678 9012 3456  CVV:789
-    Current Balance: $ 10.00
+    <form>
+      <p> <input type ="text" name="amount"  placeholder="Amount">
+        
+          <select name="amount" id="Amount"  placeholder="Amount">
+            
+            <option value="10">$10</option>
+            <option value="25">$25</option>
+            <option value="50">$50</option>
+            <option value="80">$80</option>
+            <option value="100">$100</option>
 
-    <form action="/action_page.php">
-      <label for="fname">First name:</label>
-      <input type="text" id="fname" name="fname"><br><br>
+          </select>
+          <br><br>
+          
+        </form>
+        
+      </p>
+      <p><input type ="text" name="cardName"  placeholder="Card Name" > </p>
 
-      <label for="lname">Last name:</label>
-      <input type="text" id="lname" name="lname"><br><br>
+      <p> <input type ="text" name="cardNumber"  placeholder="Card Number" height="60" width="600">
 
-      <input type="submit" value="Submit">
+      <img src="D:\Create Camp 2020\Snapper\images\visa.jfif" alt="loading.." style="width:30px;height:30px;">
+      <img src="D:\Create Camp 2020\Snapper\images\americanExpress.jfif" alt="loading.." style="width:30px;height:30px;">
+      <img src="D:\Create Camp 2020\Snapper\images\visa.jfif" alt="loading.." style="width:30px;height:30px;">
+      <img src="D:\Create Camp 2020\Snapper\images\visa.jfif" alt="loading.." style="width:30px;height:30px;">
+
+
+
+
+      </p>
+
+      <p> <input type ="text" name="month"  placeholder="Month/Year"></p>
+      <p> <input type ="text" name="cvv"    placeholder="CVV"></p>
+      
+      
+      <p><input type="checkbox">
+      <label for="Save">Save Details</label></p>
+
     </form>
 
     <footer>
        <!-- 
+         <form action="/action_page.php"></form>
        <p>Author: Hege Refsnes</p>
-       <p><a href="mailto:hege@example.com">hege@example.com</a></p>--> 
+       <p><a href="mailto:hege@example.com">hege@example.com</a></p>
+      <input type="image">
+      --> 
 
       <button type="buttonTop-Up">Top-Up</button>
       <button type="buttonCancel">Cancel</button>
