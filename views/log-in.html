@@ -33,18 +33,17 @@
         <div class="container">
             <h1> Welcome!</h1>
             <div class="entrybox">
-                <form name="myForm" onsubmit="return validateForm()" method="post">
+                <form name="myForm" action="/validateLogIn" method="post">
                     <input type ="text" name="username" required autofocus placeholder="Email" class="form-entry">
                     <br>
                     <input type="password" name="password" required autofocus placeholder="Password" class="form-entry">
                     <br>
                     <p style="color:#4040ed">Forgot Password?</p>
-                    <button id="loginButton" class="enterbutton" type="submit" value="Submit"
-                            onclick="location.href='/home'">Login</button>
+                    <button id="loginButton" class="enterbutton" type="submit" value="Submit">Login</button>
                 </form>
             </div>
         </div>
     </body>
 
-    <script src='./js/log-in.js'></script>
+<!--    <script src='./js/log-in.js'></script>-->
 </html>
