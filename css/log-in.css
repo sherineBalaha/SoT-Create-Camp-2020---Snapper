@@ -7,7 +7,7 @@
     top: 0;
     font-size: 18px;
     background-color: rgb(255, 249, 249);
-    opacity: 60px;
+    opacity: 60;
 }
 .nav-bar li:last-child {
     margin-right: 60px;
@@ -102,7 +102,7 @@ h1{
 
 .enterbutton{
     transition-duration: 0.4s; /*determine the speed of the "hover" effect*/
-    background-color:240;
+    background-color: #dddddd;
     display:inline-block;
     padding:10px 20px;
     width:10%;

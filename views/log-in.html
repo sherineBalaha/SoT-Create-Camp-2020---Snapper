@@ -3,6 +3,12 @@
     <title>Snapper Hub</title>
     <head>
         <link rel="stylesheet" href="log-in.css">
+
+        <script>
+            function checkLogIn(){
+
+            }
+        </script>
     </head>
 
     <body>
@@ -13,7 +19,7 @@
                         <a class="page-scroll"><span class="header-logo">Snapper Hub</span></a>
                         <li><a class="page-scroll" href="https://account.snapper.co.nz/register/"
                                 target="_blank">Create Account</a></li>
-                        <li><a class="page-scroll" href="#">Guest Account</a></li>
+                        <li><a class="page-scroll" href="/home">Guest Account</a></li>
                     </ul>
                 </div>
             </div>    
@@ -33,12 +39,12 @@
                     <input type="password" name="password" required autofocus placeholder="Password" class="form-entry">
                     <br>
                     <p style="color:#4040ed">Forgot Password?</p>
-                    <button class="enterbutton" type="submit" value="Submit">Login</button>
+                    <button id="loginButton" class="enterbutton" type="submit" value="Submit"
+                            onclick="location.href='/home'">Login</button>
                 </form>
             </div>
         </div>
-        <script src='../js/log-in.js'></script>
-        
-
     </body>
+
+    <script src='./js/log-in.js'></script>
 </html>
