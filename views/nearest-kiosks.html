@@ -12,7 +12,7 @@
                 <div class="nav-bar">
                     <ul>
                         <a class="page-scroll"><span class="header-logo">Snapper Hub</span></a>
-                        <li><a class="page-scroll" href="#">Timetable</a></li>
+                        <li><a class="page-scroll" href="#">View Timetable</a></li>
                         <li><a class="page-scroll" href="#">Top Up</a></li>
                         <li><a class="page-scroll" href="#">Log Out</a></li>
                     </ul>
@@ -26,15 +26,29 @@
         <br>
         <br>
         <div class="row">
-            <div class="column" style="background-color:  rgb(255, 214, 214);">
+            <div class="column" style="background-color:  rgb(238, 208, 208);">
                 <h2>Nearest Kiosks</h2>
-                <input type="text" placeholder="Enter Location..">
+                <input type="text" placeholder="Enter Location.." id="search">
                 <select name="filter" id="filter">
-                    <option value="filter">1-5km</option>
-                    <option value="filter">5-10km</option>
-                    <option value="filter">10-15km</option>
-                    <option value="filter">15-20km</option>
+                    <option value="filter">Walking</option>
+                    <option value="filter">By Car</option>
                   </select>
+                  <br>
+                  <br>
+                  <div class="container">
+                      <br>
+                      <ul>
+                          <li>Location 1</li>
+                          <br>
+                          <li>Location 2</li>
+                          <br>
+                          <li>Location 3</li>
+                          <br>
+                          <li>Location 4</li>
+                          <br>
+                          <li>Location 5</li>
+                      </ul>
+                  </div>
             </div>
             <div class="column" style="background-color:white">
                 <div id="kioskMap"></div>
